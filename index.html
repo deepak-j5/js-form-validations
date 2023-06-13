@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="css/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Advanced JS Form</title>
+</head>
+<body>
+    <h1 class="heading"><b>Form</b></h1>
+   <div class="container">
+    <form onsubmit="return submitAllow()">
+
+        <label for="name"><i class="fa-solid fa-id-card"></i>Full Name</label><br>
+        <input type="text" onchange="validateName()" name="name" id="nameId" class="input1"><br>
+        <div class="warn1"><b>Name must have atleast 5 characters</b></div>
+
+        <label for="email"><i class="fa-solid fa-envelope"></i>Email ID</label><br>
+        <input type="email" name="email" onchange="validateEmail()" id="emailId" class="input2"><br>
+        <div class="warn2"><b>Enter Valid Email</b></div>
+
+        <label for="number"><i class="fa-solid fa-phone"></i>Mobile Number</label><br>
+        <input type="phone" name="number" onchange="validatePhone()" id="phoneId" class="input3"><br>
+        <div class="warn3"><b>Enter a valid Mobile Number</b></div>
+ 
+        <label for="pass"><i class="fa-solid fa-key"></i>Password</label><br>
+        <input type="password" name="pass" onchange="validatePass()" id="passId" class="input4"><br>
+        <div class="warn4"><b>Enter a strong Password (atleast 8 digits)</b></div>
+ 
+        <label for="cpass"><i class="fa-solid fa-key"></i>Confirm Password</label><br>
+        <input type="password" name="cpass" onchange="validateCpass()" id="cpassId" class="input5"><br>
+        <div class="warn5"><b>Password is not matching</b></div>
+ 
+        <button type="submit" class="btn-submit"><b>Submit</b></button>
+ 
+        <button type="reset" class="btn-reset"><b>Reset</b></button>
+    </form>
+   </div>
+</body>
+<script src="js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>
